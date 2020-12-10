@@ -46,7 +46,7 @@ const getDeptHtml = (deptList) => {
     return deptHtml;
 }
 
-// Remove a particular employee from homePage and hence update the localstorage to fetch the data
+// Remove a particular employee from homePage and hence update the localstorage to fetch the data.
 const remove = (node) => {
   let empPayrollData = empPayrollList.find(empData => empData._id == node.id);
   if (!empPayrollData) return;
