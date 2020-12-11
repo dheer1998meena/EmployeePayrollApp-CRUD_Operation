@@ -34,7 +34,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
         try {
             (new EmployeePayroll()).startDate = new Date(Date.parse(startDate));
             setTextValue('.date-error', "");
-        } 
+        }
         catch (e) {
             setTextValue('.date-error', e);
         }
@@ -207,7 +207,7 @@ const setForm = () => {
     setSelectedValues('[name=gender]', employeePayrollObj._gender);
     setSelectedValues('[name=department]', employeePayrollObj._department);
     setValue('#salary', employeePayrollObj._salary);
-    setTextValue('.salary-output', employeePayrollObj._salary);
+    setTextValue('.salary—output', employeePayrollObj._salary);
     setValue('#notes', employeePayrollObj._note);
     let date = stringifyDate(employeePayrollObj._startDate).split(" ");
     setValue('#day', date[0]);
